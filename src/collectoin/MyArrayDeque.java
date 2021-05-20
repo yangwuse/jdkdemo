@@ -29,7 +29,7 @@ public class MyArrayDeque<E> {
     public void addFirst(E e) {
         // 不能插入null
         Objects.requireNonNull(e);
-        // 头指针从尾部向前移动 依次递减 具体查看notion模型
+        // 头指针从尾部向前移动 依次递减 具体查看notion模型 https://www.kdocs.cn/l/ckd0TtHvurAy
         head = dec(head, elem.length);
         elem[head] = e;
         // 如果头部和尾部相遇 扩容
